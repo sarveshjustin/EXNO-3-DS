@@ -15,14 +15,14 @@ enc=pd.DataFrame(ohe.fit_transform(df2[['nom_0']]))
 df2=pd.concat([df2,enc],axis=1)
 df2
 pd.get_dummies(df2,columns=["nom_0"])
-pip install --upgrade category_encoders
+pip install category_encoders
 from category_encoders import BinaryEncoder
-df=pd.read_csv("/content/data.csv")
+df=pd.read_csv("Encoding Data.csv")
 be=BinaryEncoder()
-nd=be.fit_transform(df['Ord_2'])
+nd=be.fit_transform(df['ord_2'])
 fb=pd.concat([df,nd],axis=1)
 dfb1=df.copy()
-dfb
+dfb1
 ```
 
      
